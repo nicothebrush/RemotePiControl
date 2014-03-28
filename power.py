@@ -8,7 +8,6 @@ import cgi
 from tellcore.telldus import TelldusCore
 core = TelldusCore()
 devices = core.devices()
-device = devices[device_id]
 
 # define a "power ON api endpoint"
 @app.route("/API/v1.0/power-on/<deviceId>",methods=['POST'])
